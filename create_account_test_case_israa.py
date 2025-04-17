@@ -18,19 +18,29 @@ driver.get("https://magento.softwaretestingboard.com/")
 # 2) Kita dapat banyak element <a>
 # 3) Kita pilih element <a> yang kedua sebab itu yang kita nak
 # 4) Kita click element yg kita pilih tu
+
 all_anchors_element = driver.find_elements(By.TAG_NAME, "a")
 create_account_anchor = all_anchors_element[2]
 create_account_anchor.click()
-
-
 time.sleep(5)
-########## STEP 4: User Fill In User Input ###############
+
+
+########## STEP 4: User Fill In First Name Input ###############
 
 # 1) Kita cari element username input 
-firstname_input = driver.find_element(By.NAME, "firstname")
+firstname_input = driver.find_element(By.ID, "firstname")
+# 2) Kita declare variable to store username value
+dummy_firstname = "nur"
+# 3) Masukkan value to firstname input
+firstname_input.send_keys(dummy_firstname)
 
-# 2) Kita filled with valu 
-dummy_firstname = "nuralia"
-firstname_input.send_keys(dummy_firstname)  # Enter text
+########## STEP 5: User Fill In Last Name Input ###############
+# 1) Kita cari element username input 
+lastname_input = driver.find_element(By.ID, "lastname")
+# 2) Kita declare variable to store username value
+dummy_lastname = "alia"
+# 3) Masukkan value to firstname input
+lastname_input.send_keys(dummy_lastname)
+
 
 time.sleep(30)
