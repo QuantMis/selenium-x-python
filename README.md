@@ -8,8 +8,8 @@ This project is a simple learning setup using **Selenium with Python** to automa
 
 ## 📚 Test Cases
 Procedural (To understand more on selenium library)
-1) User able to create account []
-2) User able sign in []
+1) User able to create account [DONE]
+2) User able sign in [WIP]
 3) User able to add item into the cart []
 4) User able to remove item from the cart []
 5) User able to checkout successfully []
@@ -20,7 +20,6 @@ POM (To improve automation code structure)
 3) User able to add item into the cart []
 4) User able to remove item from the cart []
 5) User able to checkout successfully []
-
 
 ## 🛠 Requirements
 
