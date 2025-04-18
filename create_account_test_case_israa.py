@@ -48,17 +48,4 @@ email_input = driver.find_element(By.ID, "email_address")
 dummy_email = "test@gmail.com"
 email_input.send_keys(dummy_email)
 
-########## STEP 7: User Fill In Password Input ###############
-
-password_input = driver.find_element(By.ID, "password")
-dummy_password = "Abc123456def"
-password_input.send_keys(dummy_password)
-
-########## STEP 8: User Fill In Password Confirmation Input ###############
-
-passwordconfirmation_input = driver.find_element(By.ID, "password-confirmation")
-dummy_passwordconfirmation = "Abc12345def"
-passwordconfirmation_input.send_keys(dummy_passwordconfirmation)
-
-
 time.sleep(30)
