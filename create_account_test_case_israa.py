@@ -42,5 +42,10 @@ dummy_lastname = "alia"
 # 3) Masukkan value to firstname input
 lastname_input.send_keys(dummy_lastname)
 
+########## STEP 6: User Fill In Email Input ###############
+
+email_input = driver.find_element(By.ID, "email_address")
+dummy_email = "test@gmail.com"
+email_input.send_keys(dummy_email)
 
 time.sleep(30)
